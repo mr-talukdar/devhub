@@ -1,0 +1,51 @@
+/* Container holds everything together */
+.input-container {
+  position: relative;
+  display: inline-block;
+  width: 30rem;
+  background-color: var(--color-surface);
+}
+
+/* 1. Position the magnifying glass at the start */
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none; /* Allows clicks to pass through to the input */
+  z-index: 2;
+  filter: invert(100%) brightness(200%);
+}
+
+/* 2. Style the input, giving it padding-left so text doesn't overlap the icon */
+.search-input {
+  width: 100%;
+  padding: 12px 12px 12px 36px; /* 36px left padding clears the icon */
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+.search-label {
+  position: absolute;
+  left: 36px; /* Aligns perfectly with the input text start */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-family: sans-serif;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.search-input:focus ~ .search-label,
+.search-input:not(:placeholder-shown) ~ .search-label {
+  opacity: 0;
+  visibility: hidden;
+}
