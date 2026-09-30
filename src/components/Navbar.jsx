@@ -11,7 +11,7 @@ const Navbar = () => {
         <div>Notifications</div>
         <div>Help</div>
         <div id="profile-image">
-          <img src="https://img.icons8.com/?size=100&id=kZNsJ6pzYD2J&format=png&color=000000" />
+          <img src="https://img.icons8.com/color/48/user-male-circle--v5.png" />
         </div>
       </div>
     </div>
