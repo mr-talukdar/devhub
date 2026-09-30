@@ -1,3 +1,4 @@
+import "./Navbar.css";
 import SearchInput from "./SearchInput/SearchInput";
 
 const Navbar = () => {
@@ -11,7 +12,10 @@ const Navbar = () => {
         <div>Notifications</div>
         <div>Help</div>
         <div id="profile-image">
-          <img src="https://img.icons8.com/color/48/user-male-circle--v5.png" />
+          <img
+            src="https://img.icons8.com/color/48/user-male-circle--v5.png"
+            alt="Profile"
+          />
         </div>
       </div>
     </div>

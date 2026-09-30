@@ -1,3 +1,4 @@
+import "./MainLayout.css";
 import Navbar from "./Navbar";
 import SideBar from "./Sidebar/SideBar";
 

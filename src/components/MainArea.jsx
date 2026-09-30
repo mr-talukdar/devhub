@@ -1,3 +1,5 @@
+import "./MainArea.css";
+
 const MainArea = ({ children }) => {
   return (
     <div id="main-area" className="main-area">

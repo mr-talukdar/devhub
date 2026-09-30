@@ -1,0 +1,24 @@
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-surface);
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    height: 100vh;
+  }
+}

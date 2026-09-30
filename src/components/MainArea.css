@@ -1,0 +1,7 @@
+.main-area {
+  width: 100%;
+  background: var(--color-background);
+  height: 100%;
+  padding: 2rem;
+  overflow-y: auto;
+}
